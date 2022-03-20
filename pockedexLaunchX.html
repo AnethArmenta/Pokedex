@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"content="IE-edge">
+<meta name="viewport" content="width=device-width">
+<title>Pokedex LaunchX</title>
+<link rel="stylesheet" href="pokedex.css">
+
+</head>
+<body class="fondoimg">      
+<section  > 
+  
+    <div class="fondo">
+        <div class="contenedor">
+       
+            <img src="orange.png"  align="left " >&nbsp; &nbsp;
+            <img src="white.png"  align="left " >&nbsp; &nbsp;
+            <img src="yellow.png"  align="left ">&nbsp; &nbsp;
+            <img src="red.png"  align="left " >&nbsp; &nbsp;
+            
+                <div class="cuadro"> 
+                    <div class="botonext">
+                       <img src="./pokemon.png" alt="pokemon" id = "pokeImg" width="100px" height="100px"><br>
+                       <link src=""  id = "pokename">
+                    </div>
+                    <div class="cuadro2">
+                           <div>
+                              Nombre: <span id="nombre" ></span>
+                           </div> 
+                           <br>
+                           <div>
+                            Tipo: <span id="poketipo"></span>  
+                           </div>
+                           <br>
+                           <div>
+                            Habilidad 1: <span id="pokehabil"></span>  
+                           </div>
+                           <br>
+                           <div>
+                            Habilidad 2: <span id="pokehabil2"></span>  
+                           </div>
+                           <br>
+                           <div>
+                            Movimiento 1: <span id="pokemov"></span>  
+                           </div>
+                           <br>
+                           <div>
+                            Movimiento 2: <span id="pokemov1"></span>  
+                           </div>
+                    </div>
+                </div>
+                
+            
+                <div class="cuadro1"> <input type="text" placeholder="Busca a tu Pokemon" id="pokeName" name="pokeName"> 
+                </div>
+                <div class="boton">
+                    <button  class="add" onclick = "fetchPokemon()"> Buscar</button>
+                
+                </div>  
+                <div class="space-a">
+                  <div class="boton1"></div>
+                  <div class="boton2"></div>
+                  <div class="boton3"></div>
+                </div>
+        </div>     
+    </div> 
+</section>
+</body>
+<footer>
+    <script src="./pokedex.js"> </script>
+</footer>
+</html>
