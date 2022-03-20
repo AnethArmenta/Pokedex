@@ -14,7 +14,6 @@ pokeName = pokeName.toLowerCase();
 const url = `https://pokeapi.co/api/v2/pokemon/${pokeName}`;
 fetch(url).then((res)=> res.json())
 .then((data)=>{
-        //let id = ('00' + data.id).slice(-3);
         pokenombre.innerHTML = data.name;
         poketipo.innerHTML = data.types[0].type.name;
         pokehabil1.innerHTML = data.abilities[0].ability.name;
